@@ -1,0 +1,20 @@
+{
+  "name": "_.slugify(appName)",
+  "description": "",
+  "repository" : { 
+  	"type" : "git",
+  	"url" : "http://github.com/<%= gitHubUserName %>/<%= _.slugify(appName) %>.git"
+  },
+  "version": "0.0.0",
+  "scripts": {
+    "start": "gulp watch"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "gulp": "^3.5.5",
+    "gulp-sass": "^0.7.1",
+    "express": "^3.5.0",
+    "tiny-lr": "^0.0.5",
+    "connect-livereload": "^0.3.2"
+  }
+}
