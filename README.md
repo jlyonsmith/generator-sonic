@@ -1,15 +1,10 @@
-# Sonic Angular.js Generator!
+# Sonic AngularJS Yeoman Generator
 
----------------
+This project is a [Yeoman Generator](http://yeoman.io/generators.html) for creating web sites that conform to the latest [Google AngularJS Best Practices](https://docs.google.com/a/artifacttech.com/document/d/1XXMvReO8-Awi1EZXAXS4PzDzdNvV6pGcuaF4Q9821Es/pub).  It can be installed directly from the [NPM Repository](https://npmjs.org/package/generator-sonic)
 
-This project is a Yeoman Generator, using which we can speed up our WebApp development. The command name is **$ yo sonic**. 
+The basic generator command is `$ yo sonic`.
 
-You can also check the [NPM Repository](https://npmjs.org/package/generator-sonic) 
-
-----------
-
-What makes it cool
-----------
+## What makes it cool
 
  1. **Ultra Fast** - Uses Gulp instead of Grunt
  2. **Live Reload** pre-configured
@@ -26,83 +21,73 @@ What makes it cool
  13. Use `gulp build`for dev mode and `gulp build:prod` for production.
  14. Share code with client using command `gulp zip` (Will create the .zip file of build folder)
 
-<i class="icon-download"></i> Installation
----------
+## <i class="icon-download"></i> Installation
 
 First of all you need to have [node.js](http://nodejs.org/) and Yeoman `npm install -g yo` installed.
 
 Install the Sonic Generator
 
-```sh
+    sh
     npm install -g generator-sonic
-```
+
 
 Make a new Directory for the project and cd into it
 
-```sh
+    sh
     mkdir my-new-project && cd $_
-```
 
 Then execute the Sonic command
 
-```sh
+    sh
     yo sonic [app-name]
-```
 
-Answer few question on the command prompt and **Thats it!**
+
+Answer few question on the command prompt and **that's it**!
 
 ---
 
-To install the dependency packages (Required **only if** you need to run the `npm install` as a **super user**)
+To install the dependency packages (Required **only if** you need to run the `npm install` as **root**)
 
 1. You first need to install all the node modules required by Sonic.
-```
+
     npm run-script preinstall
-```
+
 Or else you can directly run `npm install`
 
 2. After that you need to download all the libraries using bower.
-```
+
     npm run-script postinstall
-```
+
 Or else you can directly run `bower install`
 
 ---
+
 Finally to start the server
 
-```sh
+    sh
     gulp
-```
+
 Or else you can run `npm start`
 
------------
 
+## <i class="icon-file"></i> App Structure
 
-<i class="icon-file"></i> App Structure
----------------
-```
- - app/
-    |- index.html
-    |- app.js
-    |- main.scss
-    |- gulpfile.js
-    |- app-controller.js
-    |- app-controller-test.js
-```
+    - app/
+        |- index.html
+        |- app.js
+        |- main.scss
+        |- gulpfile.js
+        |- app-controller.js
+        |- app-controller-test.js
 
-----------
-
-<i class="icon-refresh"></i> Sonic Commands
----------------
+## <i class="icon-refresh"></i> Sonic Commands
 
 The available **Sonic** sub-generators are:
 
 * [Sonic:directive](https://github.com/jlyonsmith/generator-sonic/blob/master/directive/USAGE.md)
 * [Sonic:service](https://github.com/jlyonsmith/generator-sonic/blob/master/service/USAGE.md)
 
-
-<i class="icon-pencil"></i> Special Thanks
----------------
+## <i class="icon-pencil"></i> Special Thanks
 
 We would like to thank following for creating awesome stuff
 
@@ -114,10 +99,7 @@ We would like to thank following for creating awesome stuff
 * [Yeoman](http://yeoman.io/) - Worlflow for modern WebApps
 * [Generator](https://github.com/yeoman/generator-angular) - Yeoman Angular Generator
 
--------------------
 
-
-License
----------------
+## License
 
 See [Sonic License](https://github.com/jlyonsmith/generator-sonic/blob/master/LICENSE.md)
